@@ -1,0 +1,492 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #231651;
+    font-family: 'Lato';
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+h1{
+    font-size: 3em;
+    color: #eef63e;
+    font-family: 'Teko';
+}
+h2{
+    font-family: 'Teko';
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding:10px 20px;
+    font-size: 20px;
+
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.navbutton{
+    background-color: #231651;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20%;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 900px;
+    gap: 16px;
+    margin: auto;
+    margin-top: 50px;
+}
+.card{
+    background-color: white;
+    border-radius: 2%;
+}
+.card-image-1{
+    background-color: aqua;
+    width: auto;
+    height: 450px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.card-image-2{
+    background-color: aqua;
+    width: auto;
+    height: 500px;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+.card-image-3{
+    background-color: aqua;
+    width: auto;
+    height: 500px;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+.card-image-4{
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 5px 0 0 5px;
+}
+.card-image-5{
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 5px 0 0 5px;
+}
+.card-image-6{
+    background-color: aqua;
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    border-radius: 5px 0 0 5px;
+}
+.movie1{
+    background-image: url("who-framed-roger-rabbit.jpg");
+}
+.movie2{
+    background-image: url("hook.jpg");
+}
+.movie3{
+    background-image: url("la-la-land.jpg");
+}
+.movie4{
+    background-image: url("hidden-figures.jpg");
+    float: left;
+}
+.movie5{
+    background-image: url("palm-springs.jpg");
+    float: left;
+}
+.movie6{
+    background-image: url("barbie.jpg");
+    float: left;
+}
+.btn{
+    background-color: #231651;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 2em;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 20%;
+}
+.card-content{
+    font-size: 1.5rem;
+}
+.card-content p{
+    margin:16px;
+}
+.card1{
+    grid-column: span 4;
+    height: 700px;
+}
+.card2{
+    grid-column: span 2;
+    grid-row: span 12;
+}
+.card3{
+    grid-column: span 2;
+    grid-row: span 12;
+}
+.card4{
+    grid-column: span 4;
+    height: 400px;
+}
+.card5{
+    grid-column: span 4;
+    height: 400px;
+}
+.card6{
+    grid-column: span 4;
+    height: 400px;
+}
+@media (min-width:360px) and (max-width: 720px){
+    body{
+        width:50px;
+        margin: auto;
+        padding: 16px;
+        font-size: 2rem;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        background-color: black;
+        width: 550px;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    h1{
+        font-size: 2em;
+        font-family: 'Teko';
+    }
+    h2{
+        font-family: 'Teko';
+    }
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding:10px 20px;
+        font-size: 20px;
+    
+    }
+    nav ul li a{
+        color: black;
+        text-decoration: none;
+    }
+    .navbutton{
+        background-color: #231651;
+        border: none;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 20px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 20%;
+    }
+    .btn{
+        background-color: #231651;
+        border: none;
+        color: white;
+        padding: 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 2em;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 20%;
+    }
+    .card-container{
+        grid-template-columns: 1fr 1fr;
+        width:550px;
+        height:4900px;
+    }
+    .card-image-1{
+        background-color: aqua;
+        width: 548px;
+        height: 400px;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    .card-image-2{
+        background-color: aqua;
+        width: 547px;
+        height: 400px;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    .card-image-3{
+        background-color: aqua;
+        width: 547px;
+        height: 400px;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    .card-image-4{
+        background-color: aqua;
+        width: 547px;
+        height: 400px;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    .card-image-5{
+        background-color: aqua;
+        width: 547px;
+        height: 400px;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    .card-image-6{
+        background-color: aqua;
+        width: 547px;
+        height: 400px;
+        background-size: cover;
+        border-radius: 10px 10px 0 0;
+    }
+    .movie1{
+        background-image: url("who-framed-roger-rabbit.jpg");
+        float: left;
+    }
+    .movie2{
+        background-image: url("hook.jpg");
+        float: left;
+    }
+    .movie3{
+        background-image: url("la-la-land.jpg");
+        float: left;
+    }
+    .movie4{
+        background-image: url("hidden-figures.jpg");
+        float: left;
+    }
+    .movie5{
+        background-image: url("palm-springs.jpg");
+        float: left;
+    }
+    .movie6{
+        background-image: url("barbie.jpg");
+        float: inline-start;
+    }
+    .card1{
+        grid-column: span 2;
+        height: 800px;
+    }
+    .card2{
+        grid-column: span 2;
+        height: 800px;
+    }
+    .card3{
+        grid-column: span 2;
+        height: 800px;
+    }
+    .card4{
+        grid-column: span 2;
+        height: 800px;
+    }
+    .card5{
+        grid-column: span 2;
+        height: 800px;
+    }
+    .card6{
+        grid-column: span 2;
+        height: 800px;
+    }
+    
+}
+@media (min-width: 720px) and (max-width: 1024px) {
+    body{
+        width:70%;
+        margin: auto;
+        padding: 32px;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        background-color: black;
+        width: 700px;
+        justify-content: space-around;
+        padding-top: 5px;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    h1{
+        font-size: 2em;
+        font-family: 'Teko';
+    }
+    h2{
+        font-family: 'Teko';
+    }
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding:10px 2px;
+        font-size: 15px;
+    
+    }
+    nav ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    .navbutton{
+        background-color: #231651;
+        border: none;
+        color: white;
+        padding: 15px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 2em;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 20%;
+    }
+    .card-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        width:700px;
+        height:2000px;
+    }
+    .btn{
+        background-color: #231651;
+        border: none;
+        color: white;
+        padding: 5px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 2em;
+        margin: 16px;
+        cursor: pointer;
+        border-radius: 20%;
+    }
+    .card-image-1{
+        background-color: aqua;
+        width: 340px;
+        height: 330px;
+        background-size: cover;
+        border-radius: 5px 5px 0 0;
+    }
+    .card-image-2{
+        background-color: aqua;
+        width: 340px;
+        height: 330px;
+        background-size: cover;
+        border-radius: 5px 5px 0 0;
+    }
+    .card-image-3{
+        background-color: aqua;
+        width: 340px;
+        height: 330px;
+        background-size: cover;
+        border-radius: 5px 5px 0 0;
+    }
+    .card-image-4{
+        background-color: aqua;
+        width: 340px;
+        height: 330px;
+        background-size: cover;
+        border-radius: 5px 5px 0 0;
+    }
+    .card-image-5{
+        background-color: aqua;
+        width: 340px;
+        height: 330px;
+        background-size: cover;
+        border-radius: 5px 5px 0 0;
+    }
+    .card-image-6{
+        background-color: aqua;
+        width: 340px;
+        height: 330px;
+        background-size: cover;
+        border-radius: 5px 5px 0 0;
+    }
+    .movie1{
+        background-image: url("who-framed-roger-rabbit.jpg");
+        float: left;
+    }
+    .movie2{
+        background-image: url("hook.jpg");
+        float: left;
+    }
+    .movie3{
+        background-image: url("la-la-land.jpg");
+        float: left;
+    }
+    .movie4{
+        background-image: url("hidden-figures.jpg");
+        float: left;
+    }
+    .movie5{
+        background-image: url("palm-springs.jpg");
+        float: left;
+    }
+    .movie6{
+        background-image: url("barbie.jpg");
+        float: left;
+    }
+    .card1{
+        grid-column: span 2;
+        grid-row:span 2;
+        height: 800px;
+    }
+    .card2{
+        grid-column: span 2;
+        grid-row:span 2;
+        height: 800px;
+    }
+    .card3{
+        grid-column: span 2;
+        grid-row:span 2;
+        height: 800px;
+    }
+    .card4{
+        grid-column: span 2;
+        grid-row:span 2;
+        height: 800px;
+    }
+    .card5{
+        grid-column: span 2;
+        grid-row:span 2;
+        height: 800px;
+    }
+    .card6{
+        grid-column: span 2;
+        grid-row:span 2;
+        height: 800px;
+    }
+
+}
